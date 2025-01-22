@@ -54,6 +54,10 @@ function HeroSection() {
       <div className='bg-[#9CFFDF] bg-bottom  bg-no-repeat' style={{ backgroundImage: `url(${newsetbg.src})` }} >
 
 
+
+
+
+
         <DaminHeader />
 
 
