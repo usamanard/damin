@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../styles/base.css';
+
+
+/* styles/globals.css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ */
+
+/* Global */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Specific class */
+.no-blur {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+
+.sample-slider{
+  width: fit-content;
+}
+
+.sample-slider .swiper-wrapper {
+  transition-timing-function: linear !important; 
+  display: flex;
+  align-items: center;
+}
+
+
+@keyframes slideUp {
+  0% { transform: translateY(100%); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.4s ease both;
+}
+
+@keyframes slideDown {
+  0% { transform: translateY(0); opacity: 0; }
+  100% { transform: translateY(100%); opacity: 1; }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.4s ease both;
+}

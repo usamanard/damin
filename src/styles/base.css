@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'Gilroy-Black';
+  src: url('../fonts/Gilroy-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../fonts/Gilroy-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+
+
+@font-face {
+  font-family: 'Mona-Sans-BlackWide';
+  src: url('../fonts/Mona-Sans-BlackWide.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona-Sans-BoldWide';
+  src: url('../fonts/Mona-Sans-BoldWide.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona-Sans-LightWide';
+  src: url('../fonts/Mona-Sans-LightWide.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona-Sans-MediumWide';
+  src: url('../fonts/Mona-Sans-MediumWide.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona-Sans-RegularWide';
+  src: url('../fonts/Mona-Sans-RegularWide.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona-Sans-SemiBoldWide';
+  src: url('../fonts/Mona-Sans-SemiBoldWide.ttf') format('truetype');
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Mona-Sans-Black';
+  src: url('../fonts/Mona-Sans-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona-Sans-Bold';
+  src: url('../fonts/Mona-Sans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona-Sans-Light';
+  src: url('../fonts/Mona-Sans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona-Sans-Medium';
+  src: url('../fonts/Mona-Sans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona-Sans-Regular';
+  src: url('../fonts/Mona-Sans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona-Sans-SemiBold';
+  src: url('../fonts/Mona-Sans-SemiBold.ttf') format('truetype');
+}
+
+
+
+
+
+
+
+
+
+
+
+/* New Font Nard  */
+@font-face {
+  font-family: 'FormaDJRMicro-Black';
+  src: url('../fonts/FormaDJRMicro-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FormaDJRMicro-Bold';
+  src: url('../fonts/FormaDJRMicro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FormaDJRMicro-ExtraBold';
+  src: url('../fonts/FormaDJRMicro-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FormaDJRMicro-ExtraLight';
+  src: url('../fonts/FormaDJRMicro-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FormaDJRMicro-ExtraLight';
+  src: url('../fonts/FormaDJRMicro-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FormaDJRMicro-Medium';
+  src: url('../fonts/FormaDJRMicro-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FormaDJRMicro-Regular';
+  src: url('../fonts/FormaDJRMicro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+
+
+/* @keyframes scroll {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+} */
+
+.text-banner {
+  white-space: nowrap;
+  /* animation: scroll 10s linear infinite; */
+}
+
+
+.fadeTopBottom {
+  position: relative;
+}
+
+.fadeTopBottom::before,
+.fadeTopBottom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 2;
+  pointer-events: none;
+  /* so it doesn't interfere with scroll or clicks */
+}
+
+.fadeTopBottom::before {
+  top: 0;
+  background: linear-gradient(to bottom, white 0%, transparent 100%);
+}
+
+.fadeTopBottom::after {
+  bottom: 0;
+  background: linear-gradient(to top, white 0%, transparent 100%);
+}
+
+
+.textColor {
+  color: #203241;
+}
+
+
+.transEffect {
+  @apply transition ease-in duration-100;
+}
+
+.h1Heading {
+  @apply font-NardFont-bold text-3xl md:text-6xl tracking-tight;
+}
+
+.h2Heading {
+  @apply font-NardFont-bold text-2xl md:text-5xl tracking-tight;
+}
+
+
+.h4Heading22px {
+  @apply font-NardFont-bold text-lg md:text-xl tracking-tight;
+}
+
+.pText {
+  @apply font-NardFont-medium text-base tracking-tight;
+}
+
+
+
+
+
+.processbg span{
+  position: relative;
+  display: block;
+  width:60px;
+  height:60px;
+  opacity: 0.2;
+  -webkit-filter:blur(20px);
+}
+
+.processbg span::before
+{
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: #ffffff;
+  box-shadow: 0 0 30px #ffffff,
+  0 0 50px #ffffff,
+  0 0 70px #ffffff,
+  0 0 90px #ffffff,
+  0 0 110px #ffffff,
+  0 0 130px #ffffff;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+  transform: scale(0);
+}
+
+
+.processbg span:hover::before{
+  transition: 0s;
+  transform: scale(1);
+}
