@@ -60,7 +60,7 @@ const contacts = [
 function Navigation() {
     return (
         <nav>
-            <ul role="list" className="grid grid-cols-2 gap-2 md:gap-0 sm:grid-cols-3 ">
+            <ul role="list" className="grid grid-cols-2 gap-10 md:gap-0 md:grid-cols-3 ">
                 {navigation.map((section) => (
                     <li key={section.title}>
                         <div className="font-montserrat-semibold text-xl mb-2 tracking-tight  text-white">
@@ -111,7 +111,7 @@ function Navigation() {
 function Contacts() {
     return (
         <nav>
-            <ul role="list" className="grid grid-cols-2 gap-2 md:gap-0 sm:grid-cols-1 ">
+            <ul role="list" className="md:mt-0 mt-8 grid grid-cols-1 gap-2 md:gap-0 md:grid-cols-1 ">
                 {contacts.map((section) => (
                     <li key={section.title}>
                         <div className="font-montserrat-semibold text-xl mb-2 tracking-tight  text-white">
@@ -199,12 +199,12 @@ function QRScannerDaminFooter() {
 
 const FooterDamin = () => {
     return (
-        <div className='bg-black py-24'>
+        <div className='bg-black py-24 overflow-hidden'>
 
             <Container>
 
 
-                <div className='flex items-end'>
+                <div className='flex items-end flex-col md:flex-row'>
 
 
                     <div className='w-full md:w-3/5'>
@@ -212,7 +212,7 @@ const FooterDamin = () => {
                         <Image src={footerdaminimage} alt="" />
 
 
-                        <div className='max-w-[300px]'>
+                        <div className='max-w-full md:max-w-[300px]'>
                             <p className='mt-6   text-white font-montserrat-medium  tracking-wide  text-[14px] '>
 
 
@@ -241,30 +241,63 @@ const FooterDamin = () => {
                 </div>
 
 
-                <div className='flex items-end mt-16'>
+                <div className='flex gap-10 md:gap-0 items-end mt-16 flex-col-reverse md:flex-row'>
 
 
                     <div className='w-full md:w-3/5'>
 
-                        <div className='flex gap-12'>
+
+                        {/* show on desktop  */}
+                        <div className='hidden md:block'>
+                            <div className='flex gap-12'>
 
 
-                            <p className='text-[14px] font-montserrat text-[#ffffff80]'>
-                                2024 damin. All right reserved.
-                            </p>
+                                <p className='text-[14px] font-montserrat text-[#ffffff80]'>
+                                    2024 damin. All right reserved.
+                                </p>
 
 
 
-                            <p className='text-[14px] font-montserrat text-white'>
-                                Privacy Policy
-                            </p>
+                                <p className='text-[14px] font-montserrat text-white'>
+                                    Privacy Policy
+                                </p>
 
 
-                            <p className='text-[14px] font-montserrat text-white'>
-                                Terms & Conditions
-                            </p>
+                                <p className='text-[14px] font-montserrat text-white'>
+                                    Terms & Conditions
+                                </p>
 
 
+                            </div>
+                        </div>
+
+                        {/* Show on mobile  */}
+                        <div className='block md:hidden'>
+                            <div className='flex flex-col'>
+
+
+
+
+
+
+                                <div className='flex gap-6'>
+                                    <p className='text-[14px] font-montserrat text-white'>
+                                        Privacy Policy
+                                    </p>
+
+
+                                    <p className='text-[14px] font-montserrat text-white'>
+                                        Terms & Conditions
+                                    </p>
+                                </div>
+
+
+                                <p className='mt-8 text-[14px] font-montserrat text-[#ffffff80]'>
+                                    2024 damin. All right reserved.
+                                </p>
+
+
+                            </div>
                         </div>
 
 
@@ -278,7 +311,7 @@ const FooterDamin = () => {
 
 
 
-                    <div className='w-full md:w-2/5'>
+                    <div className='w-full md:w-2/5 '>
 
 
                         <div className='flex'>

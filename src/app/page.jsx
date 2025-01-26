@@ -42,8 +42,7 @@ import ShopCarasoul from '@/components/ShopCarasoul'
 import sellwithdaminimage from '@/assets/home/sellwithdaminimage.png'
 import FooterDamin from '@/components/FooterDamin'
 import ShortsCarosoul from '@/components/ShortsCarosoul'
-
-
+import ShortsCarosoulsDamin from '@/components/ShortsCarosoulsdamin'
 
 
 
@@ -52,7 +51,7 @@ function HeroSection() {
   return (
     < >
 
-      <div className='bg-[#9CFFDF] bg-bottom  bg-no-repeat' style={{ backgroundImage: `url(${newsetbg.src})` }} >
+      <div className='bg-[#9CFFDF]  bg-bottom  bg-no-repeat' style={{ backgroundImage: `url(${newsetbg.src})` }} >
 
 
 
@@ -63,9 +62,9 @@ function HeroSection() {
 
 
         {/* Moving Gradient */}
-       
 
-        <Container className="py-28">
+
+        <Container className="py-24 md:py-28">
 
 
 
@@ -76,9 +75,9 @@ function HeroSection() {
           <div className='flex gap-2 flex-col md:flex-row '>
 
 
-            <div className='flex w-full flex-col md:w-1/2 pr-10'>
+            <div className='flex w-full flex-col md:w-1/2 pr-0 md:pr-10'>
 
-              <h1 className='text-9xl font-NardFont-medium tracking-tight  text-black max-w-5xl'>
+              <h1 className='text-6xl md:text-9xl font-NardFont-medium tracking-tight  text-black max-w-5xl'>
                 Your trusted way to pay
               </h1>
 
@@ -92,7 +91,7 @@ function HeroSection() {
 
 
 
-              <div className='mt-12 w-fit flex gap-6 items-center bg-white rounded-[16px] p-2'>
+              <div className='mt-6 md:mt-12 w-fit flex gap-6 items-center bg-white rounded-[16px] p-2'>
 
                 <div>
 
@@ -119,9 +118,10 @@ function HeroSection() {
 
 
 
-            <div className='flex w-full md:w-1/2'>
+            <div className='pl-0  mt-8 md:mt-0 md:pl-24 flex  w-full md:w-1/2'>
 
-<ShortsCarosoul/>
+              <ShortsCarosoul />
+              {/* <ShortsCarosoulsDamin/> */}
 
             </div>
 
@@ -143,12 +143,12 @@ function WhyUseDamin() {
         <Container>
 
 
-          <div className='flex pt-24 pb-16 items-center'>
+          <div className='flex flex-col md:flex-row pt-24 pb-16 items-center'>
 
             <div className='w-full md:w-1/2 '>
 
 
-              <h2 className='text-3xl md:text-6xl font-montserrat-semibold tracking-tighter pr-20  text-black max-w-5xl'>
+              <h2 className='text-3xl md:text-6xl font-montserrat-semibold tracking-tighter pr-0 md:pr-20  text-black max-w-5xl'>
                 Why you should use damin?
               </h2>
 
@@ -161,7 +161,7 @@ function WhyUseDamin() {
             <div className='w-full md:w-1/2 '>
 
 
-              <div className=' flex justify-end items-start'>
+              <div className='mt-8 md:mt-0 flex justify-start md:justify-end items-start'>
 
 
 
@@ -546,7 +546,7 @@ function WhyUseDamin() {
 
 
 
-        <div className='h-[200px]'>
+        <div className='h-[100px] md:h-[200px]'>
 
         </div>
       </div>
@@ -563,7 +563,7 @@ function CTAsection() {
         {/* First section  */}
         <Container className=''>
 
-          <div className='p-6 rounded-[25px] gap-4  bg-black flex flex-col md:flex-row items-center' >
+          <div className='p-8 md:p-6 rounded-[25px] gap-4  bg-black flex flex-col md:flex-row items-center' >
 
 
 
@@ -571,7 +571,7 @@ function CTAsection() {
 
 
 
-              <h3 className='text-3xl md:text-6xl font-montserrat-medium tracking-wide   text-white '>
+              <h3 className='text-2xl md:text-6xl font-montserrat-medium tracking-wide   text-white '>
                 Free money transfer between accounts
               </h3>
 
@@ -670,7 +670,7 @@ function Shop() {
         <Container>
           <div className='flex justify-center items-center'>
 
-            <p className='text-3xl mb-10 md:text-xl font-montserrat-semibold tracking-tighter pr-20  text-black max-w-5xl'>Trusted by 1000 business</p>
+            <p className='text-xl mb-10 md:text-xl font-montserrat-semibold tracking-tighter pr-0 md:pr-20  text-black max-w-5xl'>Trusted by 1000 business</p>
 
 
           </div>
@@ -683,7 +683,7 @@ function Shop() {
       </div>
 
       <div className='flex items-center justify-center'>
-        <div className='mt-16'>
+        <div className='mt-8 md:mt-16'>
           <Link href="" className='w-fit flex gap-3 bg-black text-white  rounded-full px-8 py-4  text-lg font-montserrat-semibold'>
             Shop Now <Image src={arrowright} alt='' />
           </Link>
@@ -700,12 +700,12 @@ function SellWithDamin() {
       <Container>
 
 
-        <div className='flex pt-24 pb-8 items-center'>
+        <div className='flex flex-col md:flex-row pt-24 pb-8 items-center'>
 
           <div className='w-full md:w-1/2 '>
 
 
-            <h2 className='text-3xl md:text-6xl font-montserrat-semibold tracking-tighter pr-28  text-black max-w-5xl'>
+            <h2 className='text-3xl md:text-6xl font-montserrat-semibold tracking-tighter pr-0 md:pr-28  text-black max-w-5xl'>
               Looking to sell with damin
             </h2>
 
@@ -715,7 +715,7 @@ function SellWithDamin() {
           </div>
 
 
-          <div className='w-full md:w-1/2 '>
+          <div className='mt-6 md:mt-0 w-full md:w-1/2 '>
 
 
             <div className=' flex justify-end items-start'>
@@ -757,7 +757,7 @@ function SellWithDamin() {
       </div>
 
 
-      <div className='-mt-32 mb-32 flex items-center justify-center'>
+      <div className='mt-0 md:-mt-32 mb-32 flex items-center justify-center'>
         <div className=''>
           <Link href="" className='w-fit flex gap-3 bg-black text-white  rounded-full px-8 py-4  text-lg font-montserrat-semibold'>
             Shop Now <Image src={arrowright} alt='' />
@@ -772,71 +772,71 @@ function SellWithDamin() {
 function TrustedBusinessSection() {
   return (
     <>
-        <div class="tutor-price-preview-box box-has-media">
-          <div class="tutor-price-box-thumbnail">
-            <img loading="lazy" src="https://holistichealth.sa/wp-content/uploads/2024/07/training-of-trainers-course-in-holistic-wellness-and-quality-of-life-340x200.jpg" alt="training-of-trainers-course-in-holistic-wellness-and-quality-of-life" width="340" />		</div>
+      <div class="tutor-price-preview-box box-has-media">
+        <div class="tutor-price-box-thumbnail">
+          <img loading="lazy" src="https://holistichealth.sa/wp-content/uploads/2024/07/training-of-trainers-course-in-holistic-wellness-and-quality-of-life-340x200.jpg" alt="training-of-trainers-course-in-holistic-wellness-and-quality-of-life" width="340" />		</div>
 
 
-          <div class="tutor-price">
-            <div class="price">
-              <p class="price"><ins><span class="woocommerce-Price-amount amount"><bdi>9.200<span class="decimals-separator">,00</span>&nbsp;<span class="woocommerce-Price-currencySymbol">ر.س</span></bdi></span></ins></p>					</div>
+        <div class="tutor-price">
+          <div class="price">
+            <p class="price"><ins><span class="woocommerce-Price-amount amount"><bdi>9.200<span class="decimals-separator">,00</span>&nbsp;<span class="woocommerce-Price-currencySymbol">ر.س</span></bdi></span></ins></p>					</div>
+        </div>
+
+        <div class="tutor-single-course-meta tutor-meta-top">
+
+          <div class="tutor-course-level">
+            <span class="meta-label">
+              <i class="meta-icon fa-regular fa-sliders-h"></i>
+              مستوى				</span>
+            <div class="meta-value" data-no-translation="" data-trp-gettext="">جميع المستويات</div>
           </div>
 
-          <div class="tutor-single-course-meta tutor-meta-top">
+          <div class="tutor-course-duration">
+            <span class="meta-label">
+              <i class="meta-icon fa-regular fa-clock"></i>
+              المدة الزمنية				</span>
+            75 ساعات		</div>
 
-            <div class="tutor-course-level">
-              <span class="meta-label">
-                <i class="meta-icon fa-regular fa-sliders-h"></i>
-                مستوى				</span>
-              <div class="meta-value" data-no-translation="" data-trp-gettext="">جميع المستويات</div>
-            </div>
-
-            <div class="tutor-course-duration">
-              <span class="meta-label">
-                <i class="meta-icon fa-regular fa-clock"></i>
-                المدة الزمنية				</span>
-              75 ساعات		</div>
-
-            <div class="tutor-course-lesson-count">
-              <span class="meta-label">
-                <i class="meta-icon fa-regular fa-play-circle"></i>
-                محاضرات				</span>
-              <div class="meta-value">
-                199 محاضرات			</div>
-            </div>
-
-
-
+          <div class="tutor-course-lesson-count">
+            <span class="meta-label">
+              <i class="meta-icon fa-regular fa-play-circle"></i>
+              محاضرات				</span>
+            <div class="meta-value">
+              199 محاضرات			</div>
           </div>
 
-
-          <div class="tutor-lead-info-btn-group">
-
-
-            <div class="tutor-single-add-to-cart-box">
-
-              <div class="tutor-course-purchase-box">
-
-
-
-                <div class="cart-notification">
-                  <a href="https://holistichealth.sa/ar/courses/training-of-trainers-course-in-holistic-wellness-and-quality-of-life/"
-                  name="add-to-cart" class="single_add_to_cart_button ajax_add_to_cart tutor-button alt">
-                    
-                    معاينة الدورة					</a>
-                </div>
-
-
-              </div>
-
-            </div>
-
-
-            
-          </div>
 
 
         </div>
+
+
+        <div class="tutor-lead-info-btn-group">
+
+
+          <div class="tutor-single-add-to-cart-box">
+
+            <div class="tutor-course-purchase-box">
+
+
+
+              <div class="cart-notification">
+                <a href="https://holistichealth.sa/ar/courses/training-of-trainers-course-in-holistic-wellness-and-quality-of-life/"
+                  name="add-to-cart" class="single_add_to_cart_button ajax_add_to_cart tutor-button alt">
+
+                  معاينة الدورة					</a>
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
     </>
   )
 }

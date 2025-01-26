@@ -35,6 +35,7 @@ const ShopCarasoul = ({ TechStact }) => {
                 slidesPerView={5}
                 spaceBetween={10}
                 loop={true}
+                
                 // autoplay={{
                 //     delay: 0,
                 //     disableOnInteraction: false,

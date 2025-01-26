@@ -91,7 +91,7 @@ const TextBanner = () => {
 
                             <Image src={person.icon} alt='' />
 
-                            <p className='text-black font-montserrat-semibold tracking-tight md:text-6xl text-3xl'>{person.text}</p>
+                            <p className='text-black font-montserrat-semibold tracking-tight md:text-6xl text-2xl'>{person.text}</p>
 
 
 
@@ -119,7 +119,7 @@ const TextBanner = () => {
 
                             <Image src={person.icon} alt='' />
 
-                            <p className='text-black font-montserrat-semibold tracking-tight md:text-6xl text-3xl'>{person.text}</p>
+                            <p className='text-black font-montserrat-semibold tracking-tight md:text-6xl text-2xl'>{person.text}</p>
 
 
 

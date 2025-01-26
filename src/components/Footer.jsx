@@ -113,7 +113,7 @@ const Footer = () => {
                                 alt=''
                                 className='mb-16 md:mb-0'
                             />
-                        <p className='mt-2 max-w-sm pr-0 md:pr-4  text-base font-BearFont-regular text-[#ffffff95]'>We integrate AI and machine learning to ensure your product sets new benchmarks.</p>
+                        <p className='mt-2 max-w-full md:max-w-sm pr-0 md:pr-4  text-base font-BearFont-regular text-[#ffffff95]'>We integrate AI and machine learning to ensure your product sets new benchmarks.</p>
 
                         </div>
 

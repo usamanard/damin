@@ -120,10 +120,6 @@
   src: url('../fonts/FormaDJRMicro-ExtraLight.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'FormaDJRMicro-ExtraLight';
-  src: url('../fonts/FormaDJRMicro-ExtraLight.ttf') format('truetype');
-}
 
 @font-face {
   font-family: 'FormaDJRMicro-Medium';
@@ -262,4 +258,9 @@
 .processbg span:hover::before{
   transition: 0s;
   transform: scale(1);
+}
+
+
+.indexcl{
+z-index: 10;
 }

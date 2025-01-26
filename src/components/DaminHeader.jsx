@@ -28,11 +28,11 @@ const DaminHeader = () => {
         <div className='bg-black rounded-full px-2 py-2 flex items-center justify-between'>
 
 
-          <div className='w-full pl-0 md:pl-4'>
+          <div className='w-full pl-2 md:pl-4'>
             <Image src={daminlogo} alt="" />
           </div>
 
-          <div className='w-full'>
+          <div className='w-full hidden md:block'>
 
 
 

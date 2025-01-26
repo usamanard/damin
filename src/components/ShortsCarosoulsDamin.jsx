@@ -6,10 +6,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper.min.css";
-import Image from "next/image";
-import soundon from '@/assets/home/soundon1.svg'
-import soundoff from '@/assets/home/soundoff1.svg'
-import playicondamin from '@/assets/home/playicondamin1.svg'
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -35,18 +31,18 @@ const data = [
         date: "2022-08-23",
     },
     {
-        src: "https://files.bearplex.com/clients/pluscenta/videos/video1.mp4",
+        src: "https://nard.sa/wp-content/uploads/2025/01/video3.mp4",
         uploadedby: "Ahmed",
         date: "2022-06-24",
     },
     {
-        src: "https://files.bearplex.com/clients/pluscenta/videos/video1.mp4",
+        src: "https://nard.sa/wp-content/uploads/2025/01/video3.mp4",
         uploadedby: "Ahmed",
         date: "2023-02-24",
     },
 ];
 
-const ShortsCarousel = () => {
+const ShortsCarosoulsDamin = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [showPauseOverlay, setShowPauseOverlay] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
@@ -135,7 +131,7 @@ const ShortsCarousel = () => {
         <>
             <Swiper
                 slidesPerView="auto"
-                spaceBetween={10}
+                spaceBetween={0}
                 centeredSlides={false}
                 initialSlide={0}
                 pagination={{ clickable: true, type: "bullets", el: ".custom-pagination" }}
@@ -155,48 +151,40 @@ const ShortsCarousel = () => {
                     >
                         <div className="relative">
                             <div
-                                className="relative w-full border-8 border-white h-[350px] md:h-[490px] rounded-3xl"
+                                className="relative w-full h-[350px] md:h-[490px] rounded-3xl"
                                 onClick={() => handlePlayPause(index)}
                             >
                                 <video
                                     controls={false}
-                                    className="w-full h-full object-cover rounded-2xl"
+                                    className="w-full h-full object-cover rounded-3xl"
                                     style={{ objectFit: "cover" }}
                                     src={video?.src}
                                 ></video>
-
-
-                                {/* Video Pause icon  */}
                                 {isPaused && index === activeIndex && (
                                     <div className="absolute inset-0 flex items-center justify-center   ">
-                                        <Image src={playicondamin} alt=""/>
+                                        <span className="text-white text-3xl font-bold">PU</span>
                                     </div>
                                 )}
 
 
-{/* Mute and Unmute  */}
-
-                                <div className="absolute top-6 right-4">
-                                    <p className="flex font-sans text-sm text-white group-hover:text-[#DADADA]">
+                                <div className="absolute bottom-0 left-4">
+                                    <p className="flex font-sans text-sm text-red-400 group-hover:text-[#DADADA]">
                                         <button
                                             onClick={(e) => {
                                                 e.stopPropagation();
                                                 handleMuteToggle(index);
                                             }}
-                                            className="rounded-full p-1 w-fit  text-white bg-[#808080] "
+                                            className="rounded-3xl p-3 border border-1 text-white bg-[#ffffff33] border-white"
                                         >
-                                            {muteStates[index] ? <Image src={soundoff} alt="" className=""/> : <Image src={soundon} alt="" className=""/> }
+                                            {muteStates[index] ? "Mute" : "Unmute"}
                                         </button>
                                     </p>
                                 </div>
 
 
-
-
-{/* Video Progress bar  */}
                                 {index === activeIndex && (
                                     <div
-                                        className="absolute top-3 w-[90%]  right-4  h-1 bg-[#808080] rounded-md overflow-hidden"
+                                        className="absolute top-4 left-0 mx-4 w-full h-2 bg-[#808080] rounded-md overflow-hidden"
                                         style={{ zIndex: 10 }}
                                     >
                                         <div
@@ -223,4 +211,4 @@ const ShortsCarousel = () => {
     );
 };
 
-export default ShortsCarousel;
+export default ShortsCarosoulsDamin;
