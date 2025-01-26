@@ -42,7 +42,6 @@ import ShopCarasoul from '@/components/ShopCarasoul'
 import sellwithdaminimage from '@/assets/home/sellwithdaminimage.png'
 import FooterDamin from '@/components/FooterDamin'
 import ShortsCarosoul from '@/components/ShortsCarosoul'
-import ShortsCarosoulsDamin from '@/components/ShortsCarosoulsdamin'
 
 
 
@@ -121,7 +120,7 @@ function HeroSection() {
             <div className='pl-0  mt-8 md:mt-0 md:pl-24 flex  w-full md:w-1/2'>
 
               <ShortsCarosoul />
-              {/* <ShortsCarosoulsDamin/> */}
+            
 
             </div>
 
