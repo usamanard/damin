@@ -15,9 +15,9 @@ const DaminHeader = () => {
 
 
   const navItems = [
-    { title: 'Shop', href: '/' },
+    { title: 'Shop', href: '/about' },
     { title: 'Ways to pay', href: '/about' },
-    { title: 'For business', href: '/contact' },
+    { title: 'For business', href: '/business' },
   ];
 
   return (

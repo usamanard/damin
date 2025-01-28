@@ -59,7 +59,7 @@ const BusinessMovingLogos = () => {
             <div className='   pt-10 md:pt-36'>
 
 
-                <div className="flex justify-between gap-6" >
+                <div className="flex justify-between overflow-hidden gap-6" >
 
 
                     
